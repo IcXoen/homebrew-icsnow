@@ -11,7 +11,7 @@ class Icsnow < Formula
   depends_on "python@3.11"
 
   def install
-    # Safely isolates the 217 files into a background library directory
+    # Safely isolates the source files into a background library folder
     libexec.install Dir["*"]
 
     # Enforces executable flags for clean cross-machine installations
