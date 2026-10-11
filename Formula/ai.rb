@@ -1,7 +1,8 @@
 class Ai < Formula
   desc "An AI-powered command-line interface tool"
-  homepage "https://github.com/MochiZip/homebrew-tap"
-  url "https://github.com"
+  homepage "https://github.com"
+  url "https://github.com/releases/download/v1.0.0/AI.tar.gz"
+  version "1.0.0"
   sha256 "6e5ad724e4ca4b45fb029a7b8ae33fd59b0e3500aba67f83d587fdcb75c640e7"
   license "MIT"
 
