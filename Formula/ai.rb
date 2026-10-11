@@ -1,18 +1,17 @@
-class Ai < Formula
-  desc "An AI-powered command-line interface tool"
-  homepage "https://github.com/MochiZip/homebrew-tap"
-  url "https://github.com/MochiZip/homebrew-tap/releases/download/v1.0.0/AI.tar.gz"
+class Icsnow < Formula
+  desc "An AI tool built on open-source code"
+  homepage "https://github.com"
+  url "https://github.com/releases/download/v1.0.0/icsnow-1.0.0.tar.gz"
   version "1.0.0"
-  sha256 "6e5ad724e4ca4b45fb029a7b8ae33fd59b0e3500aba67f83d587fdcb75c640e7"
+  sha256 "34bf08c68ed142b9b15f3adce0bfd6913f40ab4ad42c0a8f47126395a27bbcf2"
   license "MIT"
 
   def install
-    # Dir["*"] searches the unpacked directory root for any loose files 
-    # and safely moves them into Homebrew's binary execution folder.
+    # Dynamically targets files in the root extract directory
     bin.install Dir["*"]
   end
 
   test do
-    assert_predicate bin/"AI", :exist?
+    assert_predicate bin/"icsnow", :exist?
   end
 end
